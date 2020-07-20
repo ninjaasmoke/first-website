@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        header li {
+            list-style: none;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            background-color: rgb(0, 0, 255);
+            color: white;
+            display: block;
+            text-align: center;
+            width: 200px;
+            border-radius: 100px;
+            margin-bottom: 5px;
+            padding: 1px;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: none;
+            background-color: rgba(100, 100, 255);
+            padding: 2px;
+        }
+
+        header li:nth-child(3) {
+            font-size: 24px;
+            border-radius: 100px;
+        }
+
+        section div:nth-child(even) {
+            background-color: grey;
+            width: 200px;
+        }
+
+        section div:nth-child(2):hover {
+            background-color: greenyellow;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo class selectors</h1>
+
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="http://goo.gl/V0Wl6s" target="_blank">Angular JS course</a></li>
+            <li><a href="facebook.com" target="_blank">Facebook</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+    </section>
+</body>
+
+</html>

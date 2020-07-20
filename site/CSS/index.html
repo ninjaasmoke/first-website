@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        body {
+            background-color: rgb(18, 18, 18);
+        }
+
+        p {
+            /* element selecctor*/
+            color: blue;
+            width: 200px;
+        }
+
+        h1 {
+            /* element selecctor*/
+            color: green;
+            text-align: center;
+        }
+
+        /* class selector */
+        .red {
+            color: red;
+        }
+
+        /* ID selector */
+        #name {
+            color: cyan;
+        }
+
+        div,
+        /* using both, ELEMENT and CLASS selector*/
+        .yellow {
+            /* using same for all div and .yellow*/
+            color: yellowgreen;
+        }
+
+        p.big {
+            font-size: 60px;
+            /* only for paragraph with big class*/
+        }
+
+        article>p {
+            color: green;
+            /* when p is a direct child of article, also be article > .big*/
+        }
+
+        article p {
+            color: red;
+            font-weight: 100;
+            font-style: oblique;
+            /*even if its not a direct child: decendant... can also be like article .big {}*/
+        }
+
+        .highlight.mainpoint {
+            color: red;
+            font-style: italic;
+        }
+
+        .makeMeBlue>p {
+            columns: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is a heading to learn Css
+    </h1>
+    <h2>This is h2 heading</h2>
+    <p>
+        This is a paragraph using only 200px
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium inventore corrupti repellat labore
+        obcaecati. Atque eum quas et at quis, ullam repudiandae dolorum nobis iure! Dicta quia officiis blanditiis.
+    </p>
+    <h2 class="red">This is another h2 heading, using class .red</h2>
+    <p>
+        This is a paragraph using only 200px
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laudantium inventore corrupti repellat labore
+        obcaecati. Atque eum quas et at quis, ullam repudiandae dolorum nobis iure! Dicta quia officiis blanditiis.
+    </p>
+    <div id="name">
+        This is a div using id selector
+    </div>
+
+    <div>This is a div</div>
+
+    <p class="mainpoint highlight big"> this is to show cascading of classes in CSS</p>
+
+    <article>
+        <p>P inside article</p>
+    </article>
+
+    <div class="makeMeBlue">
+        <p>Make me blue</p>
+    </div>
+</body>
+
+</html>
