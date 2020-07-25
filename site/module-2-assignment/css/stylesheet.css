@@ -23,11 +23,11 @@ p {
     background-color: #909090;
     border: 1px solid black;
     padding: 10px;
-    transition: ease-in 0.2s;
+    transition: ease-in 0.5s;
 }
 
 .container:hover {
-    background-color: #aaaaaa;
+    background-color: #c1b6f4;
 }
 
 .row {
