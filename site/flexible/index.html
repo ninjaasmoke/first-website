@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            border: 1px solid black;
+            background-color: #a52a2a;
+            width: 90%;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: Helvetica;
+            color: white;
+        }
+
+        p:hover {
+            /* background-color: #a52afa; */
+            /* border-radius: 15px; */
+            padding: 15px;
+        }
+
+        /* Responsive row */
+
+        .row {
+            width: 100%;
+        }
+
+        /* Large Devices */
+
+        @media (min-width: 1200px) {
+
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6 {
+                float: left;
+                border: 1px solid black;
+            }
+
+            .col-1 {
+                width: 16.66%;
+            }
+
+            .col-2 {
+                width: 33.32%;
+            }
+
+            .col-3 {
+                width: 50%;
+            }
+
+            .col-4 {
+                width: 66%;
+            }
+
+            .col-5 {
+                width: 83.32%;
+            }
+
+            .col-6 {
+                width: 100%;
+            }
+        }
+
+        /* Medium Devices */
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+
+            .col-md-1,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6 {
+                float: left;
+                border: 1px solid black;
+            }
+
+            .col-md-1 {
+                width: 16.66%;
+            }
+
+            .col-md-2 {
+                width: 33.32%;
+            }
+
+            .col-md-3 {
+                width: 50%;
+            }
+
+            .col-md-4 {
+                width: 66%;
+            }
+
+            .col-md-5 {
+                width: 83.32%;
+            }
+
+            .col-md-6 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Floating elements</h1>
+    <div>
+
+        <div class="row">
+            <div class="col-2 col-md-3">
+                <p>ITEM 1</p>
+            </div>
+            <div class="col-2 col-md-3">
+                <p>ITEM 2 It is getting cool!!!</p>
+            </div>
+
+            <div class="col-2 col-md-3">
+                <p>ITEM 3</p>
+            </div>
+            <div class="col-2 col-md-3">
+                <p>ITEM 4</p>
+            </div>
+            <div class="col-2 col-md-3">
+                <p>ITEM 5 THis osooo cooll</p>
+            </div>
+            <div class="col-2 col-md-3">
+                <p>ITEM 6</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
