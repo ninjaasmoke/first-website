@@ -1,8 +1,107 @@
-.row {
-    margin-bottom: 15px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.row > div {
-    border: 2px solid red;
-    background-color: gray;
+body {
+    background-color: #61122f;
+    font-family: Oxygen;
+    font-family: 'Nunito', sans-serif;
+    color: #181818;
+}
+
+.navbar {
+    text-align: left;
+    color: #a1a1a0;
+    background-color: #202020;
+    width: 100%;
+}
+
+a {
+    padding: 10px;
+}
+
+div > span {
+    color: #181818;
+}
+
+.navbar-name {
+    padding-top: 25px;
+    text-decoration: none;
+}
+
+.navbar-brand h1 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #557c3e;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    text-shadow: 1px 1px 1px #222;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+
+.navbar {
+    background-color: #f6b319;
+    border-radius: 0;
+}
+
+#logo-img {
+    background: url(../images/me.jpg);
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    float: left;
+}
+/* ******** Large Devices ******** */
+@media (min-width: 1200px) {
+    #logo-img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    .navbar-brand {
+        padding-top: 0px;
+    }
+}
+
+/* ******** Medium Devices ******** */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    #logo-img {
+        width: 0px;
+        height: 0px;
+        margin: 10px;
+    }
+    .navbar-brand {
+        padding-top: 25px;
+    }
+}
+
+/* ******** Small Devices ******** */
+
+@media (max-width: 767px) {
+    #logo-img {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+    }
 }
