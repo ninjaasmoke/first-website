@@ -83,6 +83,10 @@ li {
     background-color: #104040;
 }
 
+#note {
+    color: aquamarine;
+}
+
 @media (min-width: 1200px) {
     h1{
         font-size: 28px;
