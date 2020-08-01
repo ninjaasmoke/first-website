@@ -85,6 +85,7 @@ li {
 
 #note {
     color: aquamarine;
+    margin: 30px auto 20px;
 }
 
 @media (min-width: 1200px) {
