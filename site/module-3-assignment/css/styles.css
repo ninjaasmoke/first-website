@@ -94,6 +94,12 @@ li {
     }
 }
 
+@media (max-width : 574px) {
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 3px;
   }
