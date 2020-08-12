@@ -1,0 +1,6 @@
+{
+    "firstName" : "Nithin",
+    "lastName" : "Sai K J",
+    "likesIdli" : false,
+    "numberOfDisplays" : 2
+}
